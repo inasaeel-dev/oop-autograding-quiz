@@ -46,7 +46,12 @@ public class Student {
      * @return graduation predicate
      */
     public String getPredicate() {
-        // TODO: implement the predicate logic per the rules above
-        throw new UnsupportedOperationException("Not implemented yet");
+        if (gpa >= 3.5){
+            return "Cum Laude";
+        } else if (gpa >= 3.0) {
+            return "Very Satisfactory";
+        } else {
+            return "Satisfactory";
+        }
     }
 }
